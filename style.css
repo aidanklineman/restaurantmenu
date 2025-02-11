@@ -1,0 +1,27 @@
+h1, h2 {
+    text-align: center;
+}
+
+#snacks {
+    color: lavender;
+    background-color: purple;  
+}
+
+#drinks {
+    color: purple;
+    background-color: lavender;
+}
+
+@media (min-width: 650px) {
+    #container {
+        display: flex;
+    }
+
+    #snacks {
+        width: 50%;
+    }
+
+    #drinks {
+        width: 50%;
+    }
+}
