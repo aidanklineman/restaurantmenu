@@ -1,27 +1,68 @@
-h1, h2 {
-    text-align: center;
-}
-
-#snacks {
-    color: lavender;
-    background-color: purple;  
-}
-
-#drinks {
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+  }
+  
+  h1 {
     color: purple;
-    background-color: lavender;
-}
+  }
+  
+  #button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  #disclaimer {
+    font-size: 12px;
+    color: grey;
+    text-align: center;
+    max-width: 600px;
+    margin: 10px;
+  }
+  
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  
+  #snacks, #drinks {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px grey;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+  }
 
-@media (min-width: 650px) {
-    #container {
-        display: flex;
+@media (max-width: 600px) {
+    #snacks, #drinks {
+      width: 100%;
+      margin: 10px 0;
     }
 
-    #snacks {
-        width: 50%;
-    }
-
-    #drinks {
-        width: 50%;
-    }
 }
